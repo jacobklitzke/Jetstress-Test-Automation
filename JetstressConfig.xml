@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<configuration xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <JetstressVersionGenerated>15.0.995.0</JetstressVersionGenerated>
+  <EseVersionGenerated>15.0.847.30</EseVersionGenerated>
+  <TestDesignInfo>
+    <Type>asfdsa</Type>
+    <MultiHostBreak>false</MultiHostBreak>
+    <Description>asdfasdf
+</Description>
+    <Duration>P0Y0M0DT2H0M0S</Duration>
+    <BinaryPerfLog>true</BinaryPerfLog>
+    <VerifyChecksum>true</VerifyChecksum>
+    <RunDatabaseMaintenancePerformance>true</RunDatabaseMaintenancePerformance>
+    <RunDatabaseMaintenanceSoftRecovery>false</RunDatabaseMaintenanceSoftRecovery>
+    <ContinueOnErrors>false</ContinueOnErrors>
+    <SuppressTuning>true</SuppressTuning>
+    <UseEseCounters>true</UseEseCounters>
+    <PreloadJetCache>0.9</PreloadJetCache>
+    <BackupToDisk>false</BackupToDisk>
+    <LogFilesToReplay>500</LogFilesToReplay>
+    <LogFilesToChecksum>500</LogFilesToChecksum>
+    <LogInterval>15000</LogInterval>
+    <LogInterval2>5000</LogInterval2>
+    <OperationMix LockOps="true" InsertOps="40" DeleteOps="20" ReplaceOps="5" LazyCommits="70" />
+    <RetrieveLVOnRead>false</RetrieveLVOnRead>
+    <RetrieveLVOnScan>false</RetrieveLVOnScan>
+    <PrereadOnRead>false</PrereadOnRead>
+    <PrereadOnScan>true</PrereadOnScan>
+    <UpdateLV>true</UpdateLV>
+    <ScanPercentage>0</ScanPercentage>
+    <RestoreBackupPath />
+    <OutputPath>.</OutputPath>
+    <MaximumChecksumBuffers>20971520</MaximumChecksumBuffers>
+    <MaximumChecksumThreads>400</MaximumChecksumThreads>
+    <MaximumLatencyErrors>6</MaximumLatencyErrors>
+    <SluggishSessions>1</SluggishSessions>
+    <BatchRecords>1</BatchRecords>
+    <BatchUpdates>16</BatchUpdates>
+    <Bulky1Percentage>100</Bulky1Percentage>
+    <Thresholds Name="Strict">
+      <AverageDatabaseReadLatency>20</AverageDatabaseReadLatency>
+      <MaximumDatabaseReadLatency>100</MaximumDatabaseReadLatency>
+      <AverageLogWriteLatency>10</AverageLogWriteLatency>
+      <MaximumLogWriteLatency>100</MaximumLogWriteLatency>
+    </Thresholds>
+    <Thresholds Name="Lenient" TestRunTypes="Stress">
+      <AverageDatabaseReadLatency>20</AverageDatabaseReadLatency>
+      <MaximumDatabaseReadLatency>200</MaximumDatabaseReadLatency>
+      <AverageLogWriteLatency>10</AverageLogWriteLatency>
+      <MaximumLogWriteLatency>200</MaximumLogWriteLatency>
+    </Thresholds>
+  </TestDesignInfo>
+  <ExchangeProfile>
+    <ThreadCount></ThreadCount>
+    <TransPerSec>0</TransPerSec>
+    <ThroughputPercentage>100</ThroughputPercentage>
+    <DatabaseSource>New</DatabaseSource>
+    <DatabaseSizing>Profile</DatabaseSizing>
+    <CapacityPercentage>100</CapacityPercentage>
+    <MailboxCount></MailboxCount>
+    <MailboxQuota></MailboxQuota>
+    <MailboxIops></MailboxIops>
+    <MarginIops>0.05</MarginIops>
+    <LongPadLength>2000</LongPadLength>
+    <ShortPadLength>200</ShortPadLength>
+    <DatabaseSpaceReserved>25</DatabaseSpaceReserved>
+    <DatabaseCopyCount>2</DatabaseCopyCount>
+  </ExchangeProfile>
+  <JetSystemParams>
+    <DatabasePageSize>32768</DatabasePageSize>
+    <CircularLog>1</CircularLog>
+    <LogFileSize>1024</LogFileSize>
+    <MaxVerPages>8192</MaxVerPages>
+    <DBMThrottling>100</DBMThrottling>
+  </JetSystemParams>
+</configuration>
